@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>AI Insights by Ravi Raushan | Mahadev Blog</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Include Marked for markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Include SimpleMDE for markdown editing -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <!-- Particles.js for AI animation -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+    <!-- AI Animation Background -->
+    <div id="particles-js" class="particles-container"></div>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo-animation">
+                        <span class="logo-letter">A</span>
+                        <span class="logo-letter">I</span>
+                        <span class="logo-separator">&nbsp;|&nbsp;</span>
+                        <span class="logo-letter">M</span>
+                        <span class="logo-letter">a</span>
+                        <span class="logo-letter">h</span>
+                        <span class="logo-letter">a</span>
+                        <span class="logo-letter">d</span>
+                        <span class="logo-letter">e</span>
+                        <span class="logo-letter">v</span>
+                    </div>
+                </div>
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#home" class="active nav-link"><span>Home</span></a></li>
+                        <li><a href="#blogs" class="nav-link"><span>Blogs</span></a></li>
+                        <li><a href="#ai-tools" class="nav-link"><span>AI Tools</span></a></li>
+                        <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+                    </ul>
+                </nav>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-image">
+                    <div class="ai-sphere">
+                        <div class="sphere-inner">
+                            <div class="sphere-core"></div>
+                            <div class="orbit orbit-1">
+                                <div class="satellite"></div>
+                            </div>
+                            <div class="orbit orbit-2">
+                                <div class="satellite"></div>
+                            </div>
+                            <div class="orbit orbit-3">
+                                <div class="satellite"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-text">
+                    <h1 class="hero-title">Spiritual <span class="highlight">AI</span> Journey</h1>
+                    <p class="hero-subtitle">Exploring the divine intersection of technology and spirituality</p>
+                    <div class="hero-actions">
+                        <a href="#blogs" class="btn primary-btn animated-btn">
+                            <span>Read Blogs</span>
+                            <i class="fas fa-book-open"></i>
+                        </a>
+                        <a href="#contact" class="btn secondary-btn animated-btn">
+                            <span>Contact Me</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-container">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Where <span class="highlight">Technology</span> Meets <span class="highlight">Spirituality</span></h2>
+            <div class="featured-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Wisdom</h3>
+                    <p>Discover how artificial intelligence can help us understand ancient wisdom and spiritual teachings.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <i class="fas fa-om"></i>
+                    </div>
+                    <h3>Divine Knowledge</h3>
+                    <p>Explore the deep spiritual insights from Lord Mahadev and how they relate to modern technology.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Tech Spirituality</h3>
+                    <p>Learn how technological advancements can enhance our spiritual practices and understanding.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs-section">
+        <div class="section-divider">
+            <div class="divider-content">
+                <i class="fas fa-scroll"></i>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Popular <span class="highlight">Mahadev</span> Blogs</h2>
+            
+            <div class="blog-controls" data-aos="fade-right">
+                <button id="new-post-btn" class="btn primary-btn animated-btn">
+                    <span>New Blog Post</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="Search blogs...">
+                    <button id="search-btn" class="btn search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+
+            <!-- New Post Form (Hidden by default) -->
+            <div id="post-form-container" class="post-form-container hidden" data-aos="zoom-in">
+                <h2>Create New Blog Post</h2>
+                <form id="post-form">
+                    <div class="form-group">
+                        <label for="post-title">Title</label>
+                        <input type="text" id="post-title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-category">Category</label>
+                        <select id="post-category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="Mahadev">Mahadev</option>
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="Spirituality">Spirituality</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Philosophy">Philosophy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-content">Content</label>
+                        <textarea id="post-content" name="content" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancel-post" class="btn secondary-btn animated-btn">
+                            <span>Cancel</span>
+                        </button>
+                        <button type="submit" id="submit-post" class="btn primary-btn animated-btn">
+                            <span class="btn-text">Publish</span>
+                            <span class="spinner hidden"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Edit Post Form (Hidden by default) -->
+            <div id="edit-form-container" class="post-form-container hidden" data-aos="zoom-in">
+                <h2>Edit Blog Post</h2>
+                <form id="edit-form">
+                    <input type="hidden" id="edit-post-id">
+                    <div class="form-group">
+                        <label for="edit-post-title">Title</label>
+                        <input type="text" id="edit-post-title" name="title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-post-category">Category</label>
+                        <select id="edit-post-category" name="category" required>
+                            <option value="">Select a category</option>
+                            <option value="Mahadev">Mahadev</option>
+                            <option value="AI">Artificial Intelligence</option>
+                            <option value="Spirituality">Spirituality</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Philosophy">Philosophy</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="edit-post-content">Content</label>
+                        <textarea id="edit-post-content" name="content" required></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" id="cancel-edit" class="btn secondary-btn animated-btn">
+                            <span>Cancel</span>
+                        </button>
+                        <button type="submit" id="update-post" class="btn primary-btn animated-btn">
+                            <span class="btn-text">Update</span>
+                            <span class="spinner hidden"></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Blog Posts Container -->
+            <div id="posts-container" class="posts-container"></div>
+        </div>
+    </section>
+
+    <!-- AI Tools Section -->
+    <section id="ai-tools" class="ai-tools-section">
+        <div class="section-divider">
+            <div class="divider-content">
+                <i class="fas fa-robot"></i>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">AI <span class="highlight">Tools</span> & Resources</h2>
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tool-icon">
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                    <h3>AI Chat Assistant</h3>
+                    <p>Get spiritual guidance and answers about Lord Mahadev from our AI assistant.</p>
+                    <a href="#" class="btn secondary-btn animated-btn tool-btn">Try Now</a>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Divine Image Generator</h3>
+                    <p>Generate beautiful images of Lord Mahadev using AI technology.</p>
+                    <a href="#" class="btn secondary-btn animated-btn tool-btn">Create Images</a>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Sacred Text Analyzer</h3>
+                    <p>Analyze ancient texts and scriptures with the help of artificial intelligence.</p>
+                    <a href="#" class="btn secondary-btn animated-btn tool-btn">Analyze Texts</a>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="fas fa-meditation"></i>
+                    </div>
+                    <h3>Meditation AI</h3>
+                    <p>AI-powered meditation guide focusing on Lord Shiva's teachings.</p>
+                    <a href="#" class="btn secondary-btn animated-btn tool-btn">Start Meditation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-divider">
+            <div class="divider-content">
+                <i class="fas fa-envelope"></i>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get in <span class="highlight">Touch</span></h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Name</h3>
+                            <p>Ravi Raushan</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+917033883530">+91 7033883530</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="/cdn-cgi/l/email-protection#88fae9fee1fae9fdfbe0e9e6b9bbb9bbc8efe5e9e1e4a6ebe7e5"><span class="__cf_email__" data-cfemail="e99b889f809b889c9a818887d8dad8daa98e84888085c78a8684">[email&#160;protected]</span></a></p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn animated-btn full-width">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wave-container footer-wave">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,138.7C672,128,768,160,864,192C960,224,1056,256,1152,261.3C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-text">AI | Mahadev</div>
+                    <p>Where technology meets spirituality</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#blogs">Blogs</a></li>
+                            <li><a href="#ai-tools">AI Tools</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-link-group">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li><a href="#">Mahadev</a></li>
+                            <li><a href="#">AI Technology</a></li>
+                            <li><a href="#">Spirituality</a></li>
+                            <li><a href="#">Philosophy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2025 AI | Mahadev Blog by Ravi Raushan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmation-modal" class="modal hidden">
+        <div class="modal-content" data-aos="zoom-in">
+            <h3>Confirm Deletion</h3>
+            <p>Are you sure you want to delete this post? This action cannot be undone.</p>
+            <div class="modal-actions">
+                <button id="cancel-delete" class="btn secondary-btn animated-btn">Cancel</button>
+                <button id="confirm-delete" class="btn danger-btn animated-btn">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
+</body>
+
+</html>
